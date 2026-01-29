@@ -7,4 +7,6 @@ spring:
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
 server:
   port: 8085
-  
+
+app:
+  topic: demo-topic

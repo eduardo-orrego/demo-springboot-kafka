@@ -16,10 +16,9 @@ public class KafkaController {
 
     @PostMapping("/send")
     public String sendEvent(
-        @RequestParam String topic, 
-        @RequestParam String key, 
+        @RequestParam String key,
         @RequestParam String message) {
-        kafkaProducer.sendEventWithKey(topic, key, message);
+        kafkaProducer.sendEventWithKey(key, message);
         return "Event sent successfully to Kafka";
     }
 }
