@@ -8,4 +8,7 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 server:
-  port: 8086      
+  port: 8086
+
+app:
+  topic: demo-topic
