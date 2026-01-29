@@ -12,9 +12,9 @@ public class KafkaProducer {
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    // Método para enviar un mensaje con clave
+    // Method to send a message with a key
     public void sendEventWithKey(String topic, String key, String message) {
         kafkaTemplate.send(topic, key, message);
-        System.out.println("Evento enviado al tópico " + topic + " con clave: " + key + ", y mensaje: " + message);
+        System.out.println("Event sent to topic " + topic + " with key: " + key + " and message: " + message);
     }
 }

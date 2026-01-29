@@ -20,6 +20,6 @@ public class KafkaController {
         @RequestParam String key, 
         @RequestParam String message) {
         kafkaProducer.sendEventWithKey(topic, key, message);
-        return "Evento enviado con éxito";
+        return "Event sent successfully to Kafka";
     }
 }
